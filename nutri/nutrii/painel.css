@@ -1,0 +1,119 @@
+/* RESET E FUNDO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-painel {
+    background: #2a2a2a;
+    padding: 40px 30px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-icon {
+    font-size: 50px;
+    color: #8fa081;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8fa081;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+/* CONTAINER DO MENU */
+.menu-painel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* REMOVE ESTILO PADRÃO DE LINK */
+.menu-painel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* BOTÃO ESTILO PÍLULA */
+.btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* CORES */
+.verde {
+    background-color: #8fa081;
+    color: #ffffff !important;
+}
+
+.verde:hover {
+    background-color: #7a8c6f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* BOTÃO VERMELHO (SAIR DO SISTEMA) */
+.vermelho {
+    background-color: #a04545;
+    color: #ffffff !important;
+    margin-top: 10px;
+}
+
+.vermelho:hover {
+    background-color: #8c3a3a;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* AJUSTE PARA ÍCONES NOS BOTÕES */
+.btn-pill i {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+    .container-painel {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

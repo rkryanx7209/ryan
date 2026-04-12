@@ -1,0 +1,160 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-painel {
+    background: #2a2a2a;
+    padding: 35px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* H1 VERDE IGUAL AO AGENDAMENTOS */
+h1 {
+    color: #8fa081;
+    margin-bottom: 25px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* LAYOUT COLUNAS */
+.colunas-avaliacoes {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.coluna {
+    flex: 1;
+    text-align: left;
+}
+
+.coluna h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* CARDS */
+.lista-avaliacoes {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.card-comentario {
+    background: #353535;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-left: 6px solid #444;
+    transition: transform 0.2s;
+}
+
+.card-comentario:hover {
+    transform: translateX(5px);
+}
+
+.card-bom {
+    border-left-color: #8fa081;
+}
+
+.card-ruim {
+    border-left-color: #ff6b6b;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header strong {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* NOTAS */
+.nota-tag {
+    background: #4a5444;
+    color: #c9d6c2;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.texto-comentario {
+    color: #cccccc;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* BOTÃO PÍLULA */
+.footer-avaliacoes {
+    margin-top: 20px;
+}
+
+.btn-pill {
+    display: inline-block;
+    background: #8fa081;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 60px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-pill:hover {
+    background: #a3b396;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* SCROLLBAR */
+.lista-avaliacoes::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lista-avaliacoes::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .colunas-avaliacoes {
+        flex-direction: column;
+    }
+
+    .btn-pill {
+        width: 100%;
+    }
+}

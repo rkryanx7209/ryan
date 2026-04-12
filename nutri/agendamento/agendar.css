@@ -1,0 +1,100 @@
+/* Configurações Gerais */
+body {
+    background: #1a1a1a;
+    color: white;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: #2a2a2a;
+    border: 2px solid #8fa081;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Variantes de Erro */
+.box-erro {
+    border-color: #ff4d4d !important;
+}
+
+.titulo-erro {
+    color: #ff4d4d !important;
+}
+
+/* Textos */
+h2 {
+    color: #8fa081;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Loader (Animação de Círculo) */
+.loader {
+    border: 5px solid #333;
+    border-left-color: #8fa081;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Botões */
+.btn {
+    background: #8fa081;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #7a8a6e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(143, 160, 129, 0.4);
+}
+
+.btn-voltar {
+    background: #444;
+}
+
+.btn-voltar:hover {
+    background: #555;
+}
+
+.msg-footer {
+    font-size: 12px;
+    color: #666;
+    margin-top: 25px;
+    display: block;
+}

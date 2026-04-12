@@ -1,0 +1,150 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #1a1a1a;
+    /* Fundo grafite escuro padrão */
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.confirmacao-box {
+    background-color: #2a2a2a;
+    /* Cor do card padrão do sistema */
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8fa081;
+    /* Verde musgo padrão */
+}
+
+.texto-centro {
+    margin-bottom: 25px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.campo-edicao {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.campo-edicao label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #8fa081;
+    font-size: 14px;
+}
+
+/* ESTILO DOS CAMPOS (ARREDONDADOS) */
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 18px;
+    /* Arredondado para combinar com os campos de dieta */
+    border: none;
+    background-color: #353535;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+textarea:focus,
+select:focus {
+    background-color: #3d3d3d;
+    box-shadow: 0 0 0 2px #8fa081;
+}
+
+/* CONTAINER DOS BOTÕES PÍLULA */
+.confirmacao-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+/* ESTILO PÍLULA */
+.btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 50px;
+    /* Formato Pílula */
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-confirmar {
+    background-color: #7b8d72;
+    color: #ffffff;
+}
+
+.btn-confirmar:hover {
+    background-color: #8fa081;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-voltar {
+    background-color: #444;
+    /* Cinza para ação secundária */
+    color: #ffffff;
+}
+
+.btn-voltar:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* AJUSTE PARA TELAS MAIORES */
+@media (min-width: 480px) {
+    .confirmacao-botoes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn-pill {
+        flex: 1;
+    }
+}

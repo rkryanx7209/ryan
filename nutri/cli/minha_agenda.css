@@ -1,0 +1,167 @@
+/* =========================
+   RESET E FONTES
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9bb08f;
+    font-size: 32px;
+}
+
+/* =========================
+   CARD DO AGENDAMENTO
+========================= */
+.card-agenda {
+    background: #2a2a2a;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-agenda:hover {
+    transform: translateY(-4px);
+}
+
+.card-agenda p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ícones dos detalhes do card */
+.card-agenda p i {
+    width: 25px;
+    color: #8fa382;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.card-agenda strong {
+    color: #b7c9ab;
+    margin-right: 5px;
+}
+
+/* =========================
+   STATUS
+========================= */
+.status-pendente {
+    color: #f0ad4e;
+    font-weight: 600;
+}
+
+.status-atendido {
+    color: #5cb85c;
+    font-weight: 600;
+}
+
+/* =========================
+   BOTÕES (CORREÇÃO AQUI)
+========================= */
+.container-acoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.container-botoes-final {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.btn-pill {
+    flex: 1;
+    /* Faz os botões terem o mesmo tamanho no card */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    line-height: 1;
+    /* Evita que o texto suba ou desça */
+}
+
+/* Garante que o ícone DENTRO do botão herde a cor do texto do botão */
+.btn-pill i {
+    color: inherit !important;
+    font-size: 16px;
+    margin: 0;
+    width: auto;
+}
+
+.btn-pill:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+/* CORES ESPECÍFICAS */
+.verde-musgo {
+    background-color: #8fa382 !important;
+    color: #1a1a1a !important;
+}
+
+.vermelho-cancelar {
+    background-color: #a94442 !important;
+    color: #ffffff !important;
+}
+
+.outline-verde {
+    background-color: transparent !important;
+    border: 2px solid #9bb08f !important;
+    color: #9bb08f !important;
+}
+
+.outline-verde:hover {
+    background-color: #9bb08f !important;
+    color: #1e1e1e !important;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 600px) {
+
+    .container-acoes,
+    .container-botoes-final {
+        flex-direction: column;
+    }
+
+    .btn-pill {
+        width: 100%;
+    }
+}

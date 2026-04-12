@@ -1,0 +1,138 @@
+/* RESET BÁSICO */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* CAIXA DE LOGIN */
+.login-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+.login-box input {
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+    color: #333;
+}
+
+/* ÁREA DOS BOTÕES */
+.botoes-login {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* ESTILO PÍLULA (BASE) */
+.btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-pill:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* CORES DOS BOTÕES */
+.verde-musgo {
+    background-color: #8fa081 !important;
+    color: #ffffff !important;
+}
+
+.outline-verde {
+    background-color: transparent !important;
+    border: 2px solid #8fa081 !important;
+    color: #8fa081 !important;
+}
+
+.outline-verde:hover {
+    background-color: #8fa081 !important;
+    color: #ffffff !important;
+}
+
+/* MENSAGEM DE ERRO */
+.erro-login {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ffcccc;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* MENSAGEM DE SUCESSO (MESMO ESTILO, SÓ MUDA A COR) */
+.sucesso-login {
+    background-color: rgba(0, 255, 100, 0.2);
+    color: #ccffdd;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+    .botoes-login {
+        flex-direction: column;
+    }
+
+    .btn-pill {
+        width: 100%;
+    }
+}
+
+.recupera {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+
+}

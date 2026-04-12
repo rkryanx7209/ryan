@@ -1,0 +1,142 @@
+/* Importação da fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #343434, #121212);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Card Principal */
+.sobre-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    max-width: 500px;
+}
+
+.titulo-dieta {
+    color: #8fa081;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.msg-sucesso {
+    color: #8fa081;
+    background: rgba(143, 160, 129, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Formulário */
+.form-estilizado {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Campos Lado a Lado */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 6px;
+    margin-left: 5px;
+}
+
+.form-estilizado input,
+.form-estilizado select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-estilizado input:focus,
+.form-estilizado select:focus {
+    border-color: #8fa081;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(143, 160, 129, 0.2);
+}
+
+/* Estilo do Botão Pílula */
+.btn-padrao {
+    background: #8fa081;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-padrao:hover {
+    background: #a6b897;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-voltar {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 5px;
+}
+
+.btn-voltar:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsividade Celular */
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-card {
+        padding: 25px;
+    }
+}

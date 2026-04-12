@@ -1,0 +1,132 @@
+/* =========================
+   RESET E CONFIGURAÇÃO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1a1a1a;
+    /* Fundo escuro padrão */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.container-dieta {
+    background: #2a2a2a;
+    /* Cor dos cards do sistema */
+    padding: 30px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #9db093;
+    margin-bottom: 25px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* =========================
+   LISTA DE REFEIÇÕES
+========================= */
+.lista-dieta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-refeicao {
+    background: #353535;
+    border-radius: 15px;
+    padding: 18px 20px;
+    text-align: left;
+    border-left: 5px solid #8fa081;
+    /* Verde musgo */
+    transition: transform 0.2s;
+}
+
+.card-refeicao:hover {
+    transform: translateX(5px);
+}
+
+.card-refeicao strong {
+    font-size: 16px;
+    color: #8fa081;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-refeicao p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.sem-dieta {
+    color: #b0b0b0;
+    margin: 20px 0;
+}
+
+/* =========================
+   BOTÃO ESTILO PÍLULA (IGUAL AOS OUTROS)
+========================= */
+.container-botoes {
+    margin-top: 30px;
+}
+
+.btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    /* Formato Pílula */
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.escuro {
+    background-color: #3d3d3d;
+    color: #ffffff !important;
+}
+
+.escuro:hover {
+    background-color: #4a4a4a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    .container-dieta {
+        padding: 20px;
+    }
+
+    .btn-pill {
+        width: 100%;
+    }
+}

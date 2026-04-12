@@ -1,0 +1,115 @@
+ /* RESET E BODY IGUAL AO LOGIN */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+ body {
+     min-height: 100vh;
+     font-family: Arial, sans-serif;
+     background-color: #2a2a2a;
+     color: #ffffff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     overflow: hidden;
+ }
+
+ /* CAIXA LOGIN (ESTILO VIDRO) */
+ .login-box {
+     position: relative;
+     z-index: 1;
+     background: rgba(255, 255, 255, 0.05);
+     backdrop-filter: blur(10px);
+     padding: 45px;
+     border-radius: 25px;
+     width: 100%;
+     max-width: 420px;
+     text-align: center;
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+     border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ .login-box h2 {
+     color: #ffffff;
+     margin-bottom: 10px;
+     font-size: 26px;
+     font-weight: bold;
+ }
+
+ .login-box p {
+     margin-bottom: 25px;
+     color: #dbebd3;
+     font-size: 14px;
+ }
+
+ /* ÍCONE DE PERFIL */
+ .perfil-icon {
+     font-size: 60px;
+     color: #8fa081;
+     margin-bottom: 20px;
+ }
+
+ /* GRID DE SERVIÇOS */
+ .grid-servicos {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     margin-bottom: 25px;
+ }
+
+ /* BOTÕES PADRÃO */
+ .btn-padrao {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 12px 18px;
+     background-color: #8fa081;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 30px;
+     /* Arredondado igual ao seu login */
+     border: none;
+     font-size: 15px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: 0.2s;
+     gap: 10px;
+ }
+
+ .btn-padrao:hover {
+     opacity: 0.85;
+     transform: translateY(-2px);
+ }
+
+ /* ÁREA DE NAVEGAÇÃO (VOLTAR E SAIR) */
+ .botoes-nav {
+     display: flex;
+     justify-content: center;
+     gap: 12px;
+     margin-top: 20px;
+     padding-top: 20px;
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ .btn-voltar {
+     background-color: rgba(255, 255, 255, 0.1);
+     font-size: 13px;
+ }
+
+ .btn-sair {
+     background-color: #a04545;
+     /* Vermelho discreto */
+     font-size: 13px;
+ }
+
+ /* RESPONSIVO */
+ @media (max-width: 480px) {
+     .botoes-nav {
+         flex-direction: column;
+     }
+ }

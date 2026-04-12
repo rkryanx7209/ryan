@@ -1,0 +1,161 @@
+/* RESET E FONTES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* CONTAINER PRINCIPAL */
+.container-form {
+    width: 100%;
+    max-width: 750px;
+    background: #2a2a2a;
+    padding: 35px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #8fa081;
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* GRUPOS DE ENTRADA (LABELS + TEXTAREA) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #8fa081;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label i {
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 18px;
+    border-radius: 18px;
+    border: none;
+    background: #353535;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+    min-height: 110px;
+    transition: all 0.3s ease;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+textarea:focus {
+    outline: none;
+    background: #3d3d3d;
+    box-shadow: 0 0 0 2px #8fa081;
+}
+
+/* BOTÕES */
+.buttons-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn-pill {
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    background: #7b8d72;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn-pill:hover {
+    background: #8fa081;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+    background: #9c4a4a;
+}
+
+.btn-danger:hover {
+    background: #c25b5b;
+}
+
+.btn-secondary {
+    background: #444;
+}
+
+.btn-secondary:hover {
+    background: #555;
+}
+
+/* MENSAGENS */
+.success-msg {
+    text-align: center;
+    color: #8fa081;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: rgba(143, 160, 129, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(143, 160, 129, 0.2);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .buttons-group {
+        grid-template-columns: 1fr;
+    }
+
+    .container-form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
