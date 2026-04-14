@@ -1,0 +1,206 @@
+/* ================= PAINEL ADMINISTRATIVO - FAMILY BROOK ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container-painel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #c5a059;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ================= CONTAINER PRINCIPAL (CARD ÚNICO ESTILO SITE) ================= */
+.card-unico-servicos {
+    background: #1a1a1a;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 20px;
+    padding: 10px 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+/* LINHA DE CADA SERVIÇO */
+.linha-edicao-servico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    gap: 20px;
+}
+
+.linha-edicao-servico:last-child {
+    border-bottom: none;
+}
+
+/* ================= COLUNAS E INPUTS ================= */
+.coluna-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coluna-input.principal {
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.coluna-input.lateral {
+    flex: 1.2;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Estilização Geral de Inputs e Selects */
+.linha-edicao-servico input,
+.linha-edicao-servico select {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #333;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.linha-edicao-servico input:focus,
+.linha-edicao-servico select:focus {
+    border-color: #c5a059;
+    box-shadow: 0 0 8px rgba(197, 160, 89, 0.2);
+}
+
+/* Destaque para Nome e Descrição */
+.coluna-input.principal input[name="nome[]"] {
+    font-weight: 600;
+    color: #c5a059 !important;
+    font-size: 1.05rem;
+    width: 100%;
+}
+
+.coluna-input.principal input[name="descricao[]"] {
+    font-size: 0.85rem;
+    color: #aaaaaa !important;
+    width: 100%;
+}
+
+/* Mini Inputs (Preço e Tempo) */
+.mini-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #000;
+    padding: 2px 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.mini-input i {
+    color: #c5a059;
+    font-size: 0.9rem;
+}
+
+.mini-input input {
+    border: none !important;
+    width: 80px;
+    padding: 8px 0;
+}
+
+/* Select de Categoria Customizado */
+.coluna-input.lateral select {
+    min-width: 160px;
+    background-image: linear-gradient(45deg, transparent 50%, #c5a059 50%),
+        linear-gradient(135deg, #c5a059 50%, transparent 50%);
+    background-position: calc(100% - 15px) center, calc(100% - 10px) center;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.coluna-input.lateral select option {
+    background: #1a1a1a;
+}
+
+/* ================= BOTÕES E RODAPÉ ================= */
+.footer-acoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-pill {
+    background: #c5a059;
+    color: #121212;
+    padding: 16px 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-pill:hover {
+    background: #e2c28a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #c5a059;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    color: #e2c28a;
+    letter-spacing: 1px;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 850px) {
+    .linha-edicao-servico {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 0;
+    }
+
+    .coluna-input.lateral {
+        justify-content: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 15px;
+    }
+
+    .mini-input,
+    .coluna-input.lateral select {
+        flex: 1;
+    }
+}

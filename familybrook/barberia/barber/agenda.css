@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #e0e0e0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container-painel {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* CARD PRINCIPAL */
+.main-card-wrapper {
+    background: rgba(30, 30, 30, 0.98);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 40px 30px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+}
+
+.header-central {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header-central h2 {
+    font-size: 26px;
+    color: #c5a059;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* ESTATÍSTICA TOPO */
+.card-stats {
+    background: rgba(197, 160, 89, 0.1);
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    display: inline-block;
+}
+
+.card-stats span {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.card-stats strong {
+    font-size: 32px;
+    color: #c5a059;
+    display: block;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+/* BUSCA */
+.busca-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.busca-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 15px 15px 50px;
+    border-radius: 50px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.busca-input:focus {
+    border-color: #c5a059;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.busca-container i {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    color: #c5a059;
+    font-size: 18px;
+}
+
+/* LISTA DE CARDS */
+.lista-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.lista-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.lista-scroll::-webkit-scrollbar-thumb {
+    background: #c5a059;
+    border-radius: 10px;
+}
+
+.card-agendamento {
+    background: #1e1e1e;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 6px solid #c5a059;
+    transition: 0.3s;
+}
+
+.card-agendamento:hover {
+    transform: translateX(5px);
+    background: #252525;
+    border-color: rgba(197, 160, 89, 0.3);
+}
+
+.paciente-nome {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #aaa;
+}
+
+.info-item i {
+    color: #c5a059;
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+}
+
+/* BOTÕES DE AÇÃO */
+.acoes-agendamento {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: #1da851;
+    transform: scale(1.05);
+}
+
+.btn-concluir {
+    background: transparent;
+    border: 1px solid #c5a059;
+    color: #c5a059;
+    padding: 7px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.btn-concluir:hover {
+    background: #c5a059;
+    color: #1a1a1a;
+}
+
+/* RODAPÉ E VAZIO */
+.vazio {
+    text-align: center;
+    padding: 40px;
+    color: #555;
+}
+
+.vazio i {
+    margin-bottom: 15px;
+}
+
+.footer-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn-pill {
+    background: #c5a059;
+    color: #1a1a1a;
+    padding: 15px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.btn-pill:hover {
+    background: #e2c28a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 650px) {
+    .card-agendamento {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .acoes-agendamento {
+        align-items: center;
+        margin-top: 15px;
+    }
+}

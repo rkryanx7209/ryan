@@ -1,0 +1,142 @@
+/* ================= RESET & FONTES ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* Fundo padrão da Barbearia */
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* ================= CAIXA DE CADASTRO ================= */
+.login-box {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 480px; /* Um pouco mais largo para acomodar o flex row */
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(197, 160, 89, 0.3); /* Borda Dourada */
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ================= INPUTS E SELECTS ================= */
+.login-box input,
+.select-pill {
+    width: 100%;
+    padding: 15px 22px;
+    margin-bottom: 18px;
+    border-radius: 50px;
+    border: 1px solid #333;
+    outline: none;
+    font-size: 14px;
+    background: #1a1a1a; /* Fundo escuro */
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.login-box input:focus,
+.select-pill:focus {
+    border-color: #c5a059;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.2);
+}
+
+/* Organização Idade e Gênero */
+.input-row {
+    display: flex;
+    gap: 15px; /* Espaço entre colunas */
+}
+
+.select-pill {
+    cursor: pointer;
+    appearance: none;
+    /* Seta customizada em dourado */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23c5a059%22%20d%3D%22M7%2010l5%205%205-5z%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+}
+
+/* ================= BOTÕES ================= */
+.botoes-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+/* Botão Confirmar Cadastro */
+.verde-musgo {
+    background-color: #c5a059 !important; /* Dourado */
+    color: #1a1a1a !important;            /* Texto Preto */
+}
+
+.verde-musgo:hover {
+    background-color: #e2c28a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3);
+}
+
+/* Botão Voltar */
+.outline-verde {
+    background: transparent !important;
+    border: 2px solid #c5a059 !important;
+    color: #c5a059 !important;
+}
+
+.outline-verde:hover {
+    background: rgba(197, 160, 89, 0.1) !important;
+    color: #e2c28a !important;
+}
+
+/* ================= STATUS ================= */
+.erro-login {
+    background: rgba(255, 82, 82, 0.1);
+    color: #ff8a8a;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border: 1px solid rgba(255, 82, 82, 0.3);
+}
+
+/* Ajuste para placeholders */
+::placeholder {
+    color: #777;
+    opacity: 1;
+}

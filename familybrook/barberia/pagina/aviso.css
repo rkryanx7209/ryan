@@ -1,0 +1,109 @@
+/* ================= AVISO - ESTILO FAMILY BROOK ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: #121212;
+    /* Fundo escuro do site */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.aviso-box {
+    background: #1a1a1a;
+    /* Cinza escuro dos cards */
+    padding: 40px;
+    border-radius: 20px;
+    /* Bordas mais arredondadas igual ao site */
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    /* Borda dourada sutil */
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.icon {
+    font-size: 60px;
+    color: #c5a059;
+    /* Dourado padrão */
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.2));
+}
+
+h2 {
+    color: #c5a059;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+p {
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-size: 0.95rem;
+}
+
+.btn-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo do Botão Principal (Igual ao Agendar/Assinar) */
+.btn {
+    padding: 16px;
+    border-radius: 50px;
+    /* Formato Pill/Pílula */
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-login {
+    background: #c5a059;
+    /* Dourado */
+    color: #121212;
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+.btn-login:hover {
+    background: #e2c28a;
+    /* Dourado mais claro */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(197, 160, 89, 0.4);
+}
+
+/* Estilo do Botão Secundário */
+.btn-voltar {
+    background: transparent;
+    border: 1px solid #333 !important;
+    color: #888;
+}
+
+.btn-voltar:hover {
+    border-color: #c5a059 !important;
+    color: #c5a059;
+    background: rgba(197, 160, 89, 0.05);
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+    .aviso-box {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}

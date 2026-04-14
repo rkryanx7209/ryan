@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.box {
+    background: #1a1a1a;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.icon-header {
+    font-size: 45px;
+    color: #c5a059;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.info-plano {
+    background: rgba(197, 160, 89, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: #c5a059 !important;
+}
+
+.qr-container img {
+    background: white;
+    /* Importante para leitura do QR Code */
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+/* Área de Copiar e Colar */
+.chave-pix-container {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.pix-badge {
+    background: #000;
+    border: 1px dashed #c5a059;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#feedback-copia {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c5a059;
+    color: #000;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.btn-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Botão Dourado Premium */
+.btn-whats {
+    background: #c5a059 !important;
+    color: #000 !important;
+    padding: 16px;
+    text-decoration: none !important;
+    border-radius: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-whats:hover {
+    background: #e2c28a !important;
+    transform: translateY(-2px);
+}
+
+/* Botão Voltar Corrigido */
+.btn-voltar {
+    color: #888 !important;
+    text-decoration: none !important;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-voltar:hover {
+    color: #c5a059 !important;
+}
+
+/* Ajustes para Tablets e Celulares Grandes */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        /* Ocupa quase toda a largura em telas menores */
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Ajustes para Celulares Pequenos (iPhone SE, etc) */
+@media (max-width: 400px) {
+    .box {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-gerar,
+    .btn-whats {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+    .qr-container img {
+        width: 160px;
+        /* Reduz um pouco o QR Code para não estourar o card */
+    }
+
+    .pix-badge strong {
+        font-size: 0.85rem;
+        /* Evita que o e-mail quebre a linha de forma feia */
+    }
+}
+
+/* Garante que o conteúdo não fique colado no topo em telas muito baixas */
+body {
+    align-items: center;
+    overflow-y: auto;
+    /* Permite scroll se o card for maior que a tela */
+}

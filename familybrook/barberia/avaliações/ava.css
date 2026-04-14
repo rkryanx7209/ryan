@@ -1,0 +1,152 @@
+/* ===== RESET E FONTE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.secao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.conteudo {
+    width: 100%;
+    max-width: 480px;
+}
+
+/* ===== BOX ESTILO CONFIRMAÇÃO AGENDA ===== */
+.confirmacao-box {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(15px);
+    padding: 45px 35px;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    text-align: center;
+}
+
+.confirmacao-box h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.confirmacao-box h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* ===== LISTA DE DADOS ===== */
+.info-review p {
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-review strong {
+    color: #c5a059;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-review span {
+    color: #ffffff;
+    font-weight: 400;
+    max-width: 60%;
+    text-align: right;
+}
+
+/* ===== BOTÕES PADRONIZADOS ===== */
+.confirmacao-botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.btn-confirmar,
+.btn-voltar {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-confirmar {
+    background: #c5a059 !important;
+    color: #000000 !important;
+    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.3);
+}
+
+.btn-voltar {
+    background: #2a2a2a !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.btn-confirmar:hover {
+    transform: translateY(-5px);
+    background: #d4af37 !important;
+}
+
+.btn-voltar:hover {
+    background: #ff4d4d !important;
+    border-color: #ff4d4d !important;
+}
+
+/* MENSAGEM DE ERRO */
+.erro-msg {
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    font-size: 14px;
+}
+
+.comentario-preview {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 480px) {
+    .confirmacao-botoes form {
+        flex-direction: column;
+    }
+
+    .btn-confirmar,
+    .btn-voltar {
+        width: 100%;
+    }
+}

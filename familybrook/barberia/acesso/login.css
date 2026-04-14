@@ -1,0 +1,158 @@
+/* ================= RESET BÁSICO ================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* Degradê radial idêntico ao site principal */
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ================= CAIXA DE LOGIN ================= */
+.login-box {
+    background: rgba(30, 30, 30, 0.9); /* Fundo escuro sólido/transparente */
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.3); /* Borda dourada sutil */
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ================= INPUTS ================= */
+.login-box input {
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: 1px solid #333;
+    outline: none;
+    font-size: 14px;
+    background: #1a1a1a; /* Inputs escuros para combinar */
+    color: #ffffff;
+    transition: border-color 0.3s;
+}
+
+.login-box input:focus {
+    border-color: #c5a059; /* Brilha dourado ao clicar */
+}
+
+/* ================= ÁREA DOS BOTÕES ================= */
+.botoes-login {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* ESTILO PÍLULA (BASE) */
+.btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= CORES DOS BOTÕES (PALETA BARBEARIA) ================= */
+
+/* Botão Principal (Entrar) */
+.verde-musgo {
+    background-color: #c5a059 !important; /* Dourado/Bronze */
+    color: #1a1a1a !important;            /* Texto escuro para contraste */
+}
+
+/* Botão Secundário (Cadastrar) */
+.outline-verde {
+    background-color: transparent !important;
+    border: 2px solid #c5a059 !important;
+    color: #c5a059 !important;
+}
+
+.outline-verde:hover {
+    background-color: rgba(197, 160, 89, 0.1) !important;
+    color: #e2c28a !important;
+    border-color: #e2c28a !important;
+}
+
+/* Link de Recuperar Senha */
+.recupera {
+    display: block;
+    color: #c5a059;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.recupera:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ================= MENSAGENS DE STATUS ================= */
+.erro-login {
+    background-color: rgba(255, 68, 68, 0.1);
+    color: #ffbbbb;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+.sucesso-login {
+    background-color: rgba(0, 255, 100, 0.1);
+    color: #ccffdd;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    border: 1px solid rgba(0, 255, 100, 0.3);
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 480px) {
+    .botoes-login {
+        flex-direction: column;
+    }
+
+    .btn-pill {
+        width: 100%;
+    }
+}

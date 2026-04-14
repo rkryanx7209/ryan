@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.container-painel {
+    background: #1a1a1a;
+    padding: 40px 25px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.main-icon {
+    font-size: 50px;
+    color: #c5a059;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #c5a059;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sub {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* GRID DE MINI CARDS */
+.estatisticas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.card-mini-info {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    padding: 12px 2px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.card-mini-info:hover {
+    background: rgba(197, 160, 89, 0.05);
+    border-color: #c5a059;
+    transform: translateY(-3px);
+}
+
+.card-mini-info span {
+    display: block;
+    font-size: 10px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.card-mini-info strong {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* BOTÕES ESTILO PÍLULA */
+.menu-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-pill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.gold {
+    background: #c5a059;
+    /* Cor Dourada Premium */
+    color: #1a1a1a;
+}
+
+.gold:hover {
+    background: #d4b477;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.3);
+}
+
+.outline-red {
+    background: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    margin-top: 5px;
+}
+
+.outline-red:hover {
+    background: #ff4d4d;
+    color: #fff;
+}

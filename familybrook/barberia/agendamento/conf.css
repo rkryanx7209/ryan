@@ -1,0 +1,147 @@
+/* ===== RESET E FONTE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ===== CARD PRINCIPAL (GLASSMORPHISM) ===== */
+.confirmacao-box {
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 45px 35px;
+    border-radius: 30px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+.confirmacao-box h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.confirmacao-box h4 {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+/* ===== LISTA DE DADOS ===== */
+.confirmacao-box p {
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirmacao-box p strong {
+    color: #c5a059;
+    /* Dourado */
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.confirmacao-box p span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+/* ===== BOTÕES ===== */
+.confirmacao-botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+/* Base dos botões */
+.btn-acao {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 15px;
+    /* Arredondamento moderno, não totalmente circular */
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Confirmar (Dourado com Glow) */
+.btn-confirmar {
+    background: #c5a059 !important;
+    color: #000000 !important;
+    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.3);
+}
+
+.btn-confirmar:hover {
+    background: #d4af37 !important;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(197, 160, 89, 0.5);
+}
+
+/* Cancelar (Escuro com destaque no texto) */
+.btn-cancelar {
+    background: #2a2a2a !important;
+    color: #ff4d4d !important;
+    /* Vermelho mais vivo */
+    border: 1px solid rgba(255, 77, 77, 0.2) !important;
+}
+
+.btn-cancelar:hover {
+    background: #ff4d4d !important;
+    color: #ffffff !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 77, 77, 0.3);
+}
+
+/* Clique (Efeito de pressão) */
+.btn-acao:active {
+    transform: translateY(0);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 480px) {
+    .confirmacao-box {
+        padding: 35px 25px;
+    }
+
+    .confirmacao-botoes {
+        flex-direction: column;
+    }
+
+    .btn-acao {
+        width: 100%;
+    }
+}

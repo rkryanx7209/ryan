@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #eaeaea !important;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-central {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: rgba(30, 30, 30, 0.95) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 25px !important;
+    padding: 40px 30px !important;
+    border: 1px solid rgba(197, 160, 89, 0.3) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+    text-align: center;
+}
+
+h1 {
+    color: #c5a059 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 28px !important;
+    margin-bottom: 25px !important;
+}
+
+.info-plano {
+    background: rgba(0, 0, 0, 0.4) !important;
+    padding: 25px !important;
+    border-radius: 15px !important;
+    margin-bottom: 35px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.status-ativo {
+    color: #2ecc71 !important;
+}
+
+.status-inativo {
+    color: #ff4d4d !important;
+}
+
+/* CONTAINER DOS BOTÕES LADO A LADO */
+.container-acoes-planos {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+    width: 100% !important;
+}
+
+.btn-plano {
+    flex: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 16px 5px !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    transition: 0.3s !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+}
+
+/* BOTÃO DOURADO (ASSINAR/RENOVAR) */
+.gold-full {
+    background-color: #c5a059 !important;
+    color: #1a1a1a !important;
+    border: none !important;
+}
+
+/* BOTÃO VOLTAR (BORDA DOURADA - SEM ROXO) */
+.gold-border {
+    background-color: transparent !important;
+    border: 2px solid #c5a059 !important;
+    color: #c5a059 !important;
+}
+
+.btn-plano:hover {
+    transform: translateY(-3px) !important;
+    filter: brightness(1.1);
+}
+
+/* ALERTA */
+.alerta-vencimento {
+    background: rgba(197, 160, 89, 0.15) !important;
+    color: #c5a059 !important;
+    padding: 15px !important;
+    border-radius: 12px !important;
+    border: 1px solid #c5a059 !important;
+    margin-bottom: 20px !important;
+    font-weight: 600 !important;
+}
+
+@media (max-width: 400px) {
+    .btn-plano {
+        font-size: 11px !important;
+    }
+}

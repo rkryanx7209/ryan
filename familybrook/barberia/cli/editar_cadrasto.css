@@ -1,0 +1,166 @@
+/* ===== RESET & FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Fundo degradê radial padrão Barbearia */
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ===== CARD PRINCIPAL (ESTILO VIDRO DARK) ===== */
+.sobre-card {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(197, 160, 89, 0.3); /* Borda Dourada sutil */
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.titulo-dieta {
+    color: #c5a059; /* Dourado */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* MENSAGEM DE SUCESSO */
+.msg-sucesso {
+    color: #c5a059;
+    background: rgba(197, 160, 89, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-estilizado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Campos Lado a Lado */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-size: 12px;
+    color: #c5a059; /* Labels em Dourado */
+    margin-bottom: 8px;
+    margin-left: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-estilizado input,
+.form-estilizado select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 16px;
+    border: 1px solid #333;
+    background: #1a1a1a; /* Inputs escuros */
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-estilizado input:focus,
+.form-estilizado select:focus {
+    border-color: #c5a059;
+    background: #222;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.15);
+}
+
+/* ===== BOTÕES PÍLULA ===== */
+.btn-padrao {
+    background: #c5a059 !important; /* Dourado principal */
+    color: #1a1a1a !important;      /* Texto escuro para contraste */
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.2);
+}
+
+.btn-padrao:hover {
+    background: #e2c28a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+}
+
+.btn-voltar {
+    background: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    margin-top: 5px;
+}
+
+.btn-voltar:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: #ffffff !important;
+}
+
+/* Responsividade Celular */
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-card {
+        padding: 30px 20px;
+    }
+
+    .titulo-dieta {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,154 @@
+/* ================= RESET E BODY (PADRÃO BARBEARIA) ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+/* ================= CAIXA PRINCIPAL (ESTILO LUXO) ================= */
+.login-box {
+    position: relative;
+    z-index: 1;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 45px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.login-box h2 {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.login-box p {
+    margin-bottom: 30px;
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+/* ================= ÍCONE DE PERFIL/DESTAQUE ================= */
+.perfil-icon {
+    font-size: 65px;
+    color: #c5a059;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.4));
+}
+
+/* ================= GRID DE SERVIÇOS / BOTÕES ================= */
+.grid-servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-padrao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #c5a059 !important;
+    color: #1a1a1a !important;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 12px;
+}
+
+.btn-padrao:hover {
+    background-color: #e2c28a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3);
+}
+
+/* ================= NAVEGAÇÃO INFERIOR ================= */
+.botoes-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.btn-voltar {
+    background-color: transparent !important;
+    border: 2px solid #c5a059 !important;
+    color: #c5a059 !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-voltar:hover {
+    background: rgba(197, 160, 89, 0.1) !important;
+    color: #e2c28a !important;
+}
+
+.btn-sair {
+    background-color: transparent !important;
+    border: 2px solid #a04545 !important;
+    color: #ff8a8a !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-sair:hover {
+    background: rgba(160, 69, 69, 0.1) !important;
+    color: #ffffff !important;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 480px) {
+    .botoes-nav {
+        flex-direction: column;
+    }
+
+    .btn-voltar,
+    .btn-sair {
+        width: 100%;
+        justify-content: center;
+    }
+}

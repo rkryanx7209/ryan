@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #eaeaea;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header i {
+    color: #c5a059;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #c5a059;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card-agenda {
+    background: rgba(30, 30, 30, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.card-agenda p {
+    font-size: 17px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.card-agenda p i {
+    width: 35px;
+    color: #c5a059;
+    font-size: 22px;
+    margin-right: 12px;
+}
+
+.status-pendente {
+    color: #c5a059;
+    font-weight: 700;
+}
+
+.status-atendido {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+/* FORÇA O LADO A LADO EM QUALQUER TELA */
+.container-acoes,
+.container-botoes-final {
+    display: flex !important;
+    flex-direction: row !important;
+    /* Sempre horizontal */
+    flex-wrap: nowrap !important;
+    /* Proíbe quebra de linha */
+    gap: 10px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.form-excluir {
+    flex: 1;
+    display: flex;
+}
+
+/* ESTILO PÍLULA PADRONIZADO */
+.btn-pill {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 5px;
+    border-radius: 50px;
+    /* Formato pílula */
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    /* Não quebra o texto */
+}
+
+/* CORES DOS BOTÕES */
+.verde-musgo {
+    background-color: #c5a059 !important;
+    color: #1a1a1a !important;
+}
+
+.vermelho-cancelar {
+    background-color: #ff4d4d !important;
+    color: #ffffff !important;
+}
+
+.outline-gold {
+    border: 2px solid #c5a059 !important;
+    color: #c5a059 !important;
+    background: transparent !important;
+}
+
+/* REMOVIDA A MUDANÇA PARA COLUNA NO MOBILE */
+@media (max-width: 600px) {
+
+    .container-acoes,
+    .container-botoes-final {
+        flex-direction: row !important;
+        gap: 8px;
+    }
+
+    .btn-pill {
+        font-size: 10px;
+        padding: 12px 2px;
+    }
+}

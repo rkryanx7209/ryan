@@ -1,0 +1,166 @@
+/* ===== RESET BÁSICO ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Fundo degradê radial padrão Barbearia */
+    background: radial-gradient(circle at center, #2c2c2c 0%, #000000 100%) !important;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.secao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== BOX DE FEEDBACK (ESTILO LUXO) ===== */
+.confirmacao-box {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(197, 160, 89, 0.3); /* Borda Dourada */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #c5a059; /* Dourado */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.texto-centro {
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+.campo-edicao {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.campo-edicao label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #c5a059; /* Rótulos em Dourado */
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== ESTILO DOS CAMPOS (BLACK PREMIUM) ===== */
+textarea,
+select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 18px;
+    border: 1px solid #333;
+    background-color: #1a1a1a; /* Fundo preto profundo */
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    height: 130px;
+    resize: none;
+}
+
+/* Foco nos campos */
+textarea:focus,
+select:focus {
+    border-color: #c5a059;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.1);
+}
+
+/* ===== BOTÕES PÍLULA ===== */
+.confirmacao-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: none;
+}
+
+/* Botão Enviar Feedback (Dourado) */
+.btn-confirmar {
+    background-color: #c5a059 !important;
+    color: #1a1a1a !important;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.2);
+}
+
+.btn-confirmar:hover {
+    background-color: #e2c28a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+}
+
+/* Botão Voltar (Estilo Ghost) */
+.btn-voltar {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-voltar:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (min-width: 480px) {
+    .confirmacao-botoes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn-pill {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .confirmacao-box {
+        padding: 30px 20px;
+    }
+}
