@@ -4,9 +4,9 @@ Bem-vindo ao meu repositório de estudos e projetos reais! Aqui organizo minha e
 
 ## 📁 Projetos em Destaque
 
-* **[✂️ Diogo Barber](https://diogobarber.gt.tc/?i=2):** Landing page profissional para barbearia.
+* **[✂️ Diogo Barber](https://diogobarber.gt.tc/?i=2):** Landing page profissional para barbearia. *(Projeto em Grupo)*
 * **[🍎 Nutri GT](https://nutri.gt.tc/):** Website focado no nicho de saúde e nutrição.
-* **[🏠 Family Brook](https://familybrook.gt.tc/?i=1):** Site institucional responsivo.
+* **[🏠 Family Brook](https://familybrook.gt.tc/?i=1):** Site institucional responsivo. *(Projeto em Grupo)*
 
 ## 🛠️ Tecnologias que utilizo:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
